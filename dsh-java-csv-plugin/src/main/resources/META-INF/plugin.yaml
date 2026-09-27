@@ -1,0 +1,6 @@
+id: dsh-java-csv-plugin
+name: DSH CSV Studio Plugin
+version: 0.1.0
+author: Xiaofuge
+description: Read-only CSV/TSV analysis tools (profile, clean plan, pivot, outliers, head) for DeepSeek Harness.
+entrypoint: cn.xiaofuge.dsh.csv.plugin.DshCsvPlugin

@@ -1,0 +1,21 @@
+server:
+  port: 8102
+
+spring:
+  application:
+    name: dsh-java-csv
+  web:
+    resources:
+      cache:
+        cachecontrol:
+          no-cache: true
+  jackson:
+    default-property-inclusion: non_null
+
+dsh:
+  csv:
+    data-directory: ${user.home}/.dsh-java-csv
+    command-timeout-seconds: 20
+    max-rows: 100000
+    harness:
+      base-url: ${DSH_HARNESS_BASE_URL:http://127.0.0.1:8090}
